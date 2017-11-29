@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="browsermode" content="application">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="x5-page-mode" content="app">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" user-scalable="no" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <meta name="full-screen" content="yes">
+    <meta charset="utf-8">
+    <title>图片预览与上传</title>
+    <link rel="stylesheet" href="./src/index.css">
+</head>
+
+<body>
+    <div class="page">
+        <label class="file_container" for="upfile">
+
+            <!--图片类型的上传如果accept设置成image/*通配符的情况下载safari下相应速度会特别慢；会把文件全部遍历一遍取值；利用下面这些只会查找指定类型的 -->
+            <input id ="upfile"type="file" accept="image/gif,image/jpeg,image/jpg,image/png,image/svg" multiple>
+        </label>
+        <div class='img_upload'>
+            <i class="clear_both"></i>
+        </div>
+        <div class="submit_btn">提交上传</div>
+    </div>
+</body>
+<script type="text/javascript" src="./src/index.js">
+</script>
+</html>
